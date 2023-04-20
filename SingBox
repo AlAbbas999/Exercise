@@ -1,0 +1,7 @@
+import bpy
+
+# Create the first box
+bpy.ops.mesh.primitive_cube_add(size=1)
+box1 = bpy.context.active_object
+box1.scale = (2, 2, 2)
+box1.location = (0, 0, 0)

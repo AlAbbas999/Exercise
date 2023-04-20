@@ -1,0 +1,19 @@
+import bpy
+
+# Create the first box
+bpy.ops.mesh.primitive_cube_add(size=1)
+box1 = bpy.context.active_object
+box1.scale = (2, 2, 2)
+box1.location = (0, 0, 0)
+
+# Create the second box
+bpy.ops.mesh.primitive_cube_add(size=1)
+box2 = bpy.context.active_object
+box2.scale = (4, 4, 4)
+box2.location = (0, 6, 0)
+
+# Create the third box
+bpy.ops.mesh.primitive_cube_add(size=1)
+box3 = bpy.context.active_object
+box3.scale = (6, 6, 6)
+box3.location = (8, 0, 0)
